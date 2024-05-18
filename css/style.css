@@ -40,13 +40,16 @@
 } 
 .image2-div {
     max-width: 100%;
-    height: 642px;
+    height: auto;
     overflow: hidden; 
 }
 .image2 {
     width: 100%; 
     height: 100%;
     display: block;
+    position: absolute;
+    top: 0; 
+    left: 0;
     object-fit: cover;
 } 
 
@@ -109,57 +112,27 @@
 
 /* header */
 
-.header-wrapper {
-    /* display: flex;
-    align-items: center; */
+.container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-}
-.header {
-    display: flex;
+    grid-template-columns: 1fr 1fr 4fr 1fr 1fr;
     height: 83px;
-    width: 100%;
-    border-style: none none solid none;
-    border-width: 1px;
 }
-.navigation {
-    display: flex;
-    
-}
-.nav-left {
-    display: flex;
-    justify-self: left;
-}
-.nav-middle {
-
-}
-.nav-right {
-    display: flex;
-    /* transform: translate(200%); */
-}
-.header-box1 {
-    width: 180px;
-    align-items: center;
-    border-style: none solid none none;
-    border-width: 1px;
-    padding: 24px 32px 24px 32px;
-}
-.header-box2 {
-    width: 180px;
-    align-items: center;
-    border-style: none none none solid;
-    border-width: 1px;
-    padding: 24px 32px 24px 32px;
+.container div {
+    border: 1px solid black;
+    align-content: center;
+    text-align: center;
 }
 
-/* test */
+
+/* section1 */
 
 .section1-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: minmax(720px) minmax(1080px);
 }
-.section1-grid-container div {
+.left-block,
+.right-bottom,
+.title-box {
     border: 1px solid black;
 }
 .right-top,
@@ -167,11 +140,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+/* left block */
 .left-block {
     padding: 80px;
 }
 .line-horizontal {
-    max-width: 560px;
+    max-width: 700px;
     width: 100%;
     height: 1px;
     background-color: black;
@@ -185,106 +160,28 @@
     height: 256px;
     margin-left: 24px;
 }
+
+/* right blocks */
 .title-box {
     padding: 100px 0;
     text-align: center;
 }
 
-/* section1 */
-
-/* .section1-grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-}
-.section1-grid-box {
-    font-size: 30px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: auto auto;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-.section1-grid-box::after {
-    content: "";
-    background-color: black;
-    position: absolute;
-    width: 100%;
-    height: 1px;
-}
-.section1-grid-box::before {
-    content: "";
-    background-color: black;
-    position: absolute;
-    width: 1px;
-    height: 100%;
-}
-
-.left-block1 {
-    height: 720px;
-    max-width: 720px;
-    width: 100%;
-    padding: 80px;
-}
-.line-horizontal {
-    max-width: 560px;
-    width: 100%;
-    height: 1px;
-    background-color: black;
-    margin: 30px 0 35px 0;
-}
-.left-block-div2 {
-    display: flex;
-}
-.line-vertical {
-    border-left: 1px solid;
-    height: 256px;
-    margin-left: 24px;
-}
-.title-box {
-    padding: 157px 20px;
-    font-size: 30px;
-    text-align: center;
-    height: 360px;
-    max-width: 360px;
-    width: 100%;
-    border: 1px solid black;
-} */
 
 /* section2 */
 
 .section2-grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(720px);
 }
 .section2-grid-box {
-    height: 600px;
-    max-width: 720px;
-    width: 100%;
     border: 1px solid black;
     padding: 80px;
-    /* position: relative;
-    top: 0;
-    left: 0; */
 }
 .LuxeBouquets-h3 {
     margin-top: 24px;
 }
-
-/* .section2-grid-box::after {
-    content: "";
-    background-color: black;
-    position: absolute;
-    width: 100%;
-    height: 1px;
-}
-.section2-grid-box::before {
-    content: "";
-    background-color: black;
-    position: absolute;
-    width: 1px;
-    height: 100%;
-} */
 
 
 
@@ -332,11 +229,11 @@
 
 .s3-left-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: 1fr 1fr;
 }
 .s3-title-box {
     border: 1px solid black;
-    padding: 16px;
+    padding: 60px 0;
     text-align: center;
     align-content: center;
 }
@@ -383,7 +280,7 @@
 
 .section5-grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));;
+    grid-template-columns: 1fr 1fr;
 }
 .s5-grid-box {
     padding: 204px 80px;
