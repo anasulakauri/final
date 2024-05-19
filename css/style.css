@@ -46,38 +46,18 @@ input[type=submit] {
     font-size: 16px;
 }
 
-.image {
-    display: block;
-}
 .image1-div {
     max-width: 100%;
-    height: auto;
+    height: 100%;
     overflow: hidden; 
-    position: relative;
 }
 .image1 {
     width: 100%; 
     height: 100%;
     display: block;
-    position: absolute;
-    top: 0; 
-    left: 0;
     object-fit: cover;
 } 
-.image2-div {
-    max-width: 100%;
-    height: auto;
-    overflow: hidden; 
-}
-.image2 {
-    width: 100%; 
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0; 
-    left: 0;
-    object-fit: cover;
-} 
+
 
 /* fonts */
 
@@ -201,7 +181,7 @@ input[type=submit] {
 
 /* right blocks */
 .title-box {
-    padding: 100px 0;
+    padding: 100px 25px;
     text-align: center;
 }
 
@@ -222,6 +202,10 @@ input[type=submit] {
 }
 .s2-text {
     margin-bottom: 50px;
+    margin-top: 30px;
+    line-height: 140%;
+    font-family: 'Poppins-regular';
+    font-size: 16px;
 }
 
 
@@ -406,6 +390,9 @@ input[type=submit] {
     .section3-grid-container {
         grid-template-columns: 1fr;
     }
+    .image-active1 {
+        height: 500px;
+    }
 }
 
 @media (max-width: 855px) {
@@ -420,6 +407,12 @@ input[type=submit] {
     }
     .s5-grid-box {
         padding: 100px 50px;
+    }
+    .image-active1 {
+        height: 400px;
+    }
+    .image-active2 {
+        height: 400px;
     }
 }
 
@@ -443,9 +436,6 @@ input[type=submit] {
     .header-container {
         display: none;
     }
-    /* .title-box {
-        padding: 80px;
-    } */
 }
 
 
@@ -458,6 +448,15 @@ input[type=submit] {
     }
     .heading3 {
         font-size: 26px;
+    }
+    .image2 {
+        width: 200px;
+    }
+    .image-active1 {
+        height: 300px;
+    }
+    .image-active2 {
+        height: 300px;
     }
     .text2 {
         font-size: 11px;
@@ -478,7 +477,7 @@ input[type=submit] {
         padding: 30px;
     }
     .title-box {
-        padding: 60px 0;
+        padding: 50px 15px;
     }
     .title-box h3 {
         margin-bottom: 60px;
@@ -526,6 +525,12 @@ input[type=submit] {
     }
     .section1-grid-container {
         margin-top: 48px;
+    }
+    .image2 {
+        width: 150px;
+    }
+    .heading1 {
+        font-size: 30px;
     }
 }
 
