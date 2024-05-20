@@ -263,23 +263,9 @@ input[type=submit] {
     justify-content: center;
 }
 
-/* right section bottom */
-.s3-icons-box {
-    border: 1px solid black;
-    padding: 16px;
-    text-align: center;
-    align-content: center;
-    
-}
-.s3-icons {
-    display: flex;
-    max-width: 248px;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-}
-.icon {
-    margin-right: 3.5px;
+/* right section */
+.image-active1 {
+    height: 652px;
 }
 
 /* section4 */
@@ -380,6 +366,9 @@ input[type=submit] {
     .s3-form {
         padding: 50px;
     }
+    .image-active1 {
+        height: 592px;
+    }
 }
 
 
@@ -435,6 +424,9 @@ input[type=submit] {
     }
     .header-container {
         display: none;
+    }
+    .header-container.active {
+        display: block;
     }
 }
 

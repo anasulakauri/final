@@ -1,6 +1,6 @@
-let alert = 'Please, write your number';
+let navigationBlock = document.getElementById('navBar')
+let burgerBlock = document.getElementById('burgerBar')
 
-console.log(alert);
-
-let alert 
-if
+burgerBlock.addEventListener("click", function() {
+    navigationBlock.classList.add("active");
+})
